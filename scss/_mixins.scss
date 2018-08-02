@@ -1,0 +1,83 @@
+// ----------------------------
+// --- font face
+// ----------------------------
+@mixin font($name, $path, $weight: null, $style: null, $exts: eot woff2 woff ttf svg) {
+  $src: null;
+  $extmods: ( eot: "?",
+  svg: "#" + str-replace($name, " ", "_"));
+  $formats: ( otf: "opentype",
+  ttf: "truetype");
+  @each $ext in $exts {
+    $extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext);
+    $format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
+    $src: append($src, url(quote($path + "." + $extmod)) format(quote($format)), comma);
+  }
+  @font-face {
+    font-family: quote($name);
+    font-style: $style;
+    font-weight: $weight;
+    src: $src;
+  }
+}
+
+// ----------------------------
+// --- font size
+// ----------------------------
+@mixin font-size($sizeValue: 1.6) {
+  font-size: ($sizeValue * 10) + px;
+  font-size: $sizeValue + rem;
+}
+
+// ----------------------------
+// --- placeholder
+// ----------------------------
+@mixin input-placeholder {
+  &.placeholder {
+    @content;
+  }
+  &:-moz-placeholder {
+    @content;
+  }
+  &::-moz-placeholder {
+    @content;
+  }
+  &:-ms-input-placeholder {
+    @content;
+  }
+  &::-webkit-input-placeholder {
+    @content;
+  }
+}
+
+// ----------------------------
+// --- border
+// ----------------------------
+@mixin border-all($width,
+$style,
+$color) {
+  border-width: $width;
+  border-style: $style;
+  border-color: $color;
+}
+
+// ----------------------------
+// --- filer property
+// ----------------------------
+// https://dvcs.w3.org/hg/FXTF/raw-file/tip/filters/index.html 
+//
+// grayscale      ex: filter: grayscale(100%);
+// sepia          ex: filter: sepia(100%);
+// saturate       ex: filter: saturate(0%);
+// hue-rotate     ex: filter: hue-rotate(45deg);
+// invert         ex: filter: invert(100%);
+// brightness     ex: filter: brightness(15%);
+// contrast       ex: filter: contrast(200%);
+// blur           ex: filter: blur(2px);
+@mixin filter($filter-type,
+$filter-amount) {
+  -webkit-filter: $filter-type + unquote('(#{$filter-amount})');
+  -moz-filter: $filter-type + unquote('(#{$filter-amount})');
+  -ms-filter: $filter-type + unquote('(#{$filter-amount})');
+  -o-filter: $filter-type + unquote('(#{$filter-amount})');
+  filter: $filter-type + unquote('(#{$filter-amount})');
+}
