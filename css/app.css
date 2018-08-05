@@ -2073,17 +2073,17 @@
   font-family: "Hurme";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/HurmeGeometricSans3-Regular.eot?") format("eot"), url("../fonts/HurmeGeometricSans3-Regular.woff2") format("woff2"), url("../fonts/HurmeGeometricSans3-Regular.woff") format("woff"), url("../fonts/HurmeGeometricSans3-Regular.ttf") format("truetype"), url('../fonts/HurmeGeometricSans3-Regular.svg#str-replace("Hurme", " ", "_")') format("svg"); }
+  src: url("../fonts/hurmegeometricsans3-regular.eot?") format("eot"), url("../fonts/hurmegeometricsans3-regular.woff2") format("woff2"), url("../fonts/hurmegeometricsans3-regular.woff") format("woff"), url("../fonts/hurmegeometricsans3-regular.ttf") format("truetype"), url('../fonts/hurmegeometricsans3-regular.svg#str-replace("Hurme", " ", "_")') format("svg"); }
 @font-face {
   font-family: "Hurme";
   font-style: normal;
   font-weight: 600;
-  src: url("../fonts/HurmeGeometricSans3-Semibold.eot?") format("eot"), url("../fonts/HurmeGeometricSans3-Semibold.woff2") format("woff2"), url("../fonts/HurmeGeometricSans3-Semibold.woff") format("woff"), url("../fonts/HurmeGeometricSans3-Semibold.ttf") format("truetype"), url('../fonts/HurmeGeometricSans3-Semibold.svg#str-replace("Hurme", " ", "_")') format("svg"); }
+  src: url("../fonts/hurmegeometricsans3-semibold.eot?") format("eot"), url("../fonts/hurmegeometricsans3-semibold.woff2") format("woff2"), url("../fonts/hurmegeometricsans3-semibold.woff") format("woff"), url("../fonts/hurmegeometricsans3-semibold.ttf") format("truetype"), url('../fonts/hurmegeometricsans3-semibold.svg#str-replace("Hurme", " ", "_")') format("svg"); }
 @font-face {
   font-family: "Hurme";
   font-style: normal;
   font-weight: 300;
-  src: url("../fonts/HurmeGeometricSans3-light.eot?") format("eot"), url("../fonts/HurmeGeometricSans3-light.woff2") format("woff2"), url("../fonts/HurmeGeometricSans3-light.woff") format("woff"), url("../fonts/HurmeGeometricSans3-light.ttf") format("truetype"), url('../fonts/HurmeGeometricSans3-light.svg#str-replace("Hurme", " ", "_")') format("svg"); }
+  src: url("../fonts/hurmegeometricsans3-light.eot?") format("eot"), url("../fonts/hurmegeometricsans3-light.woff2") format("woff2"), url("../fonts/hurmegeometricsans3-light.woff") format("woff"), url("../fonts/hurmegeometricsans3-light.ttf") format("truetype"), url('../fonts/hurmegeometricsans3-light.svg#str-replace("Hurme", " ", "_")') format("svg"); }
 /* PLUGINS */
 /*!
  * Font Awesome Free 5.2.0 by @fontawesome - https://fontawesome.com

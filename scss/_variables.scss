@@ -44,9 +44,9 @@ $border-color-active: $dark-grey;
 $roboto: 'Roboto', sans-serif;
 
 // -------- local font : Hurme
-@include font('Hurme', '../fonts/HurmeGeometricSans3-Regular', 400, normal);
-@include font('Hurme', '../fonts/HurmeGeometricSans3-Semibold', 600, normal);
-@include font('Hurme', '../fonts/HurmeGeometricSans3-light', 300, normal);
+@include font('Hurme', '../fonts/hurmegeometricsans3-regular', 400, normal);
+@include font('Hurme', '../fonts/hurmegeometricsans3-semibold', 600, normal);
+@include font('Hurme', '../fonts/hurmegeometricsans3-light', 300, normal);
 $hurme : 'Hurme', sans-serif;
 
 // -------- font-weight
