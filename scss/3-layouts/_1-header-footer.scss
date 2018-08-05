@@ -1,0 +1,8 @@
+header,
+footer {
+  padding-top: $gutter-width;
+  padding-bottom: $gutter-width;
+  p{
+    @include font-size($fz-small)
+  }
+}

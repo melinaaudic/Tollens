@@ -1,0 +1,104 @@
+.information {
+  margin-bottom: 50px;
+  .magasin {
+    @include font-size($fz-regular);
+  }
+}
+
+form {
+  label {
+    display: block;
+    @include font-size(1.4);
+  }
+  input {
+    &:required {
+      box-shadow: none;
+    }
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="url"],
+  input[type="search"],
+  input[type="date"],
+  input[type="time"] {
+    width: 100%;
+    height: 37px;
+    padding: 10px;
+    margin-bottom: $gutter-width;
+    @include border-all(1px, solid, $border-color);
+    font-family: $hurme;
+    @include font-size($fz-regular);
+    &:hover {
+      @include border-all(1px, solid, $border-color-hover);
+    }
+    &:focus {
+      @include border-all(1px, solid, $border-color-focus);
+    }
+    &:active {
+      @include border-all(1px, solid, $border-color-active);
+    }
+  }
+
+  /* Customize the label (the container) */
+  .checkbox {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 10px;
+    font-family: $roboto;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    input {
+      position: absolute;
+      visibility: hidden;
+      margin-right: 10px;
+      cursor: pointer;
+      &:checked ~ .checkmark {
+        &:after {
+          display: block;
+        }
+      }
+    }
+    label {
+      @include font-size(1.2);
+      color: $color-text-second;
+      margin-bottom: $double-gutter-width;
+      a {
+        color: $color-text-second;
+      }
+    }
+    .checkmark {
+      display: inline-block;
+      position: relative;
+      height: 15px;
+      width: 15px;
+      top: 2px;
+      margin-right: 10px;
+      @include border-all(1px, solid, $border-color);
+      &:after {
+        content: "";
+        display: none;
+        width: 5px;
+        height: 11px;
+        border: solid $border-color;
+        border-width: 0 1px 1px 0;
+        -webkit-transform: rotate(32deg);
+        -ms-transform: rotate(32deg);
+        transform: rotate(32deg);
+        margin: 0 3px;
+      }
+    }
+  }
+  input[type="submit"] {
+    background-color: $color-background-primary;
+    border: none;
+    padding: $gutter-width $double-gutter-width;
+    @include font-size($fz-xx-large);
+    color: $color-text-invert;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+}

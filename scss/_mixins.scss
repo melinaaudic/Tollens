@@ -81,3 +81,39 @@ $filter-amount) {
   -o-filter: $filter-type + unquote('(#{$filter-amount})');
   filter: $filter-type + unquote('(#{$filter-amount})');
 }
+
+// ----------------------------
+// --- reponsive
+// ----------------------------
+@mixin breakpoint($point) {
+  @if $point==phone-small {
+    @media (max-width: 349px) {
+      @content ;
+    }
+  }
+  @if $point==phone {
+    @media (min-width: 350px) {
+      @content ;
+    }
+  }
+  @else if $point==tablet-portrait {
+    @media (min-width: 600px) {
+      @content ;
+    }
+  }
+  @else if $point==tablet-landscape {
+    @media (min-width: 900px) {
+      @content ;
+    }
+  }
+  @else if $point==desktop {
+    @media (min-width: 1200px) {
+      @content ;
+    }
+  }
+  @else if $point==big-desktop {
+    @media (min-width: 1800px) {
+      @content ;
+    }
+  }
+}

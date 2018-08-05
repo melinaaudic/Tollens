@@ -1,0 +1,133 @@
+.offres {
+  display: flex;
+  flex-direction: column;
+  @include breakpoint(desktop) {
+    flex-direction: row;
+  }
+  .inner {
+    max-width: 525px;
+    margin: 0 auto;
+    margin-top: 50px;
+    box-sizing: border-box;
+    .date {
+      text-align: center;
+      padding: 15px 10px;
+      text-transform: uppercase;
+      @include font-size($fz-large);
+      @include breakpoint(desktop) {
+        padding: 32px 20px;
+        @include font-size($fz-xx-large);
+      }
+
+      p {
+        &:before {
+          content: "";
+          display: inline-block;
+          position: relative;
+          background-image: url(../medias/calendrier.svg);
+          width: 25px;
+          height: 28px;
+          margin-right: 20px;
+          top: 4px;
+        }
+      }
+    }
+    .offre {
+      padding: 15px 25px;
+      text-align: center;
+      font-weight: $bold-weight;
+      @include breakpoint(desktop) {
+        padding: 32px 50px;
+      }
+      p {
+        font-family: $hurme;
+        display: inline;
+        text-transform: uppercase;
+        @include breakpoint(tablet-portrait) {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+      span {
+        @include font-size($fz-x-large);
+      }
+    }
+  }
+}
+
+%offre {
+  font-family: $hurme;
+  width: 100%;
+  height: 376px;
+  background-size: 960px;
+  background-repeat: no-repeat;
+  @include breakpoint(desktop) {
+    width: 50%;
+  }
+}
+
+.premiere-offre {
+  background-image: url(../medias/background-01.jpg);
+  background-position: center top;
+  @extend %offre;
+  @include breakpoint(desktop) {
+    background-position: right top;
+  }
+  .white {
+    color: $color-text-first;
+  }
+  .offre {
+
+    span:first-child {
+      @include breakpoint(tablet-portrait) {
+        @include font-size(6);
+        line-height: 60px;
+      }
+    }
+    span:nth-child(2) {
+      @include breakpoint(tablet-portrait) {
+        @include font-size(2.6);
+        line-height: 31px;
+      }
+    }
+    span:last-child {
+      @include breakpoint(tablet-portrait) {
+        @include font-size(2);
+        line-height: 25px;
+      }
+    }
+  }
+}
+
+
+.deuxieme-offre {
+  background-image: url(../medias/background-02.jpg);
+  background-position: center top;
+  @extend %offre;
+  @include breakpoint(desktop) {
+    background-position: left top;
+  }
+  .white {
+    color: $color-text-second;
+  }
+  .offre {
+    @include breakpoint(tablet-portrait) {
+      span:first-child {
+        @include font-size(5.9);
+        line-height: 60px;
+      }
+    }
+    @include breakpoint(tablet-portrait) {
+      span:nth-child(2) {
+        @include font-size(4.17);
+        line-height: 31px;
+      }
+    }
+    @include breakpoint(tablet-portrait) {
+      span:last-child {
+        @include font-size(1.84);
+        line-height: 25px;
+      }
+    }
+  }
+}

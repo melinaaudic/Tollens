@@ -1,0 +1,22 @@
+.background {
+  &.primary {
+    background-color: $color-background-primary;
+    color: $color-text-invert;
+  }
+  &.secondary {
+    background-color: $color-background-secondary;
+    color: $color-text;
+    border-top: 1px solid $border-color;
+  }
+  &.tertiary {
+    background-color: $color-background-tertiary;
+    color: $color-text-invert;
+  }
+  &.black-n-white{
+    background-color: $white;
+    color: $black;
+  }
+  &.white{
+    background-color: rgba($white, 0.8);
+  }
+}

@@ -1,0 +1,26 @@
+html {
+  font-family: $hurme;
+  font-weight: $regular-weight;
+  font-size: 62.5%;
+  color: $color-text;
+  * {
+    box-sizing: border-box;
+  }
+}
+
+body {
+  @include font-size($fz-large);
+}
+img{
+//  width: 100%;
+}
+
+.hide {
+  display: none;
+}
+
+.page-section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+

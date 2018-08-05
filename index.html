@@ -1,20 +1,142 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="FR">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title></title>
-  
-  <!-- style.css -->
+  <title>Tollens</title>
+  <!-- style -->
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/app.css">
-  
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="medias/favicon.png" />
+  <!-- favicon -->
+  <link rel="icon" href="medias/favicon.ico" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 </head>
 
 <body>
+  <div class="container-fluid background primary">
+    <header class="wrapper">
+      <div class="row middle-xs between-xs">
+        <div class="col-xs-8 col-md-4">
+          <a href="#"><img src="medias/logo-tollens.jpg" alt="Tollens - Créateur de peinture depuis 1748"></a>
+        </div>
+        <div class="col-xs-4 col-md-1">
+          <img src="medias/icon-tollens.jpg" alt="Tollens">
+        </div>
+      </div>
+    </header>
+  </div>
+  <main>
+    <section class="offres">
+      <div class="container-fluid premiere-offre">
+        <div class="inner">
+          <div class="date background black-n-white">
+            <p>Du 1<sup>er</sup> juillet au 30 septembre</p>
+          </div>
+          <div class="offre background white">
+            <p class="">
+              <span>50€ offerts*</span>
+              <span>par tranche de 150€ d'achat</span>
+              <span>sur les revêtements de murs et sols</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid deuxieme-offre">
+        <div class="inner">
+          <div class="date background black-n-white">
+            <p>Du 1<sup>er</sup> juillet au 31 août</p>
+          </div>
+          <div class="offre background white">
+            <p>
+              <span>-20% sur les</span>
+              <span>peintures tollens</span>
+              <span>+5% supplémentaires avec de l'outillage</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="page-section container-fluid wrapper">
+      <div class="row center-xs">
+        <div class="col-md-10 col-xs-12 information">
+          <h1>Téléchargez votre bon de réduction</h1>
+          <p>Valable dans le réseau des 176 magasins Tollens</p>
+          <p class="magasin"><em><a href="#"><i class="fas fa-map-marker-alt"></i> Trouvez le magasin le plus proche de chez vous</a></em></p>
+        </div>
+      </div>
+      <div class="row center-xs">
+        <div class="col-md-10 col-xs-12">
+          <form action="" methode="get" name="inscription">
+            <div class="row center-xs">
+              <div class="col-xs-12 col-md-4 start-xs">
+                <p id="help"></p>
+
+                <label for="nom">Nom :</label>
+                <input type="text" name="nom" id="nom" required>
+                <span class="hide field_missing" id="nom_missing">Veuillez entrer votre prénom</span>
+              </div>
+              <div class="col-xs-12 col-md-4 start-xs">
+
+                <label for="prenom">Prénom :</label>
+                <input type="text" name="prenom" id="prenom" required>
+                <span class="hide field_missing" id="prenom_missing">Veuillez entrer votre nom</span>
+              </div>
+              <div class="col-xs-12 col-md-4 start-xs">
+                <label for="email">E-mail :</label>
+                <input type="email" name="email" id="email" required>
+                <span class="hide field_missing" id="email_missing">Veuillez entrer votre e-mail</span>
+              </div>
+            </div>
+            <div class="row start-xs middle-xs checkbox">
+              <div class="col-xs-12">
+
+                <label for="newsletter"><input type="checkbox" id="newsletter" name="newsletter" value="newsletter" class="css-checkbox" checked><span class="checkmark"></span>En cochant cette case, vous acceptez de recevoir les e-mails d’information et bons plans du site <a href="www.tollens.com">www.tollens.com</a></label>
+              </div>
+            </div>
+            <div class="row center-xs">
+              <input type="submit" name="submit" id="submit" value="Je télécharge">
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="page-section container-fluid background secondary">
+      <div class="wrapper">
+        <div class="row center-xs">
+          <h2 class="col-xs-12">Offres valables sur nos peintures et sur les marques partenaires</h2>
+        </div>
+        <div class="row around-xs">
+          <div class="col-xs-9 col-sm-12 reference">
+            <div class="row around-xs">
+              <img src="medias/partenaire-1-logo-gerflor.jpg" alt="partenaire">
+              <img src="medias/partenaire-2-logo-balterio.jpg" alt="partenaire">
+              <img src="medias/partenaire-3-logo-balsan.jpg" alt="partenaire">
+              <img src="medias/partenaire-4-logo-filpassion.jpg" alt="partenaire">
+              <img src="medias/partenaire-5-logo-montecolino.jpg" alt="partenaire">
+              <img src="medias/partenaire-6-logo-lutece.jpg" alt="partenaire">
+              <img src="medias/partenaire-7-logo-orac.jpg" alt="partenaire">
+              <img src="medias/partenaire-8-logo-nmc.jpg" alt="partenaire">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="container-fluid background tertiary">
+    <div class="wrapper">
+      <div class="row center-xs">
+        <div class="col-xs-12 col-sm-6">
+          <p>*Offre valable du 1er juillet au 30 septembre 2017 : 50€TTC offerts sur l'ensemble du magasin par tranche d'achat de 150€TTC en revêtements de murs et sols. Non cumulable avec d’autres promotions en cours.</p>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+          <p>*Offre valable du 1er juillet au 31 août 2017 : 20% de remise sur les peintures professionnelles Tollens et 5% supplémentaires sur les peintures en promotion si vous achetez de l'outillage, hors Flamant, Farow & Ball et Tollens GP. Non cumulable avec d’autres promotions en cours et valable sur le tarif magasin TTC.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
   <script src="js/script.js"></script>
 </body>
 

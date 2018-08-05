@@ -1,0 +1,38 @@
+h1 {
+  font-family: $hurme;
+  @include font-size($fz-xxx-large);
+  font-weight: $semibold-weight;
+  color: $color-text-h1;
+  text-transform: uppercase;
+  margin-bottom: $gutter-width;
+}
+
+h2 {
+  font-family: $hurme;
+  @include font-size($fz-xx-large);
+  font-weight: $semibold-weight;
+  color: $color-text-h2;
+  text-transform: uppercase;
+}
+
+a {
+  color: $color-text-link;
+  &:hover{
+    color: $color-text-link-hover;
+  }
+  &:visited{
+    color: $color-text-link-visited
+  }
+}
+
+sup {
+  font-size: 60%;
+  vertical-align: super;
+}
+
+em {
+  font-style: italic;
+}
+p{
+  font-family: $roboto;
+}

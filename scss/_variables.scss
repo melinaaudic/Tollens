@@ -4,41 +4,51 @@
 // -------- real color
 $white: #FFFFFF;
 $black: #000000;
-$dark-grey: #333333;
-$light-grey: #ff0000;
+$dark-grey: #706f6f;
+$light-grey: #ebebeb;
+$blue :#023a5d;
+$red: #bb1f2e;
+$green: #579787;
 
 // -------- background
-$color-background-primary: $white;
-$color-background-secondary: $dark-grey;
-$color-background-tertiary: $light-grey;
+$color-background-primary: $blue;
+$color-background-secondary: $light-grey;
+$color-background-tertiary: $dark-grey;
 
 // -------- text
-$color-text-heading: $dark-grey;
-$color-text-heading-invert: $white;
+$color-text-h1: $blue;
+$color-text-h2: $red;
 
-$color-text: $dark-grey;
+$color-text: $blue;
+$color-text-second: $dark-grey;
 $color-text-invert: $white;
+$color-text-first:$red;
+$color-text-second:$green;
 
-$color-text-strong: $color-text;
-$color-text-strong-invert: $color-text-invert;
-
-$color-text-link: $dark-grey;
+$color-text-link: $blue;
+$color-text-link-hover: $red;
 $color-text-link-visited: $dark-grey;
-$color-text-link-hover: $dark-grey;
 
 // -------- object
 $color-shadow: rgba ($dark-grey, .25);
-$border-color: $dark-grey;
+$border-color: $blue;
+$border-color-hover: $dark-grey;
+$border-color-focus: $dark-grey;
+$border-color-active: $dark-grey;
 
 // ----------------------------
 // --- font
 // ----------------------------
-// -------- google font : montserrat
-@import url(https://fonts.googleapis.com/css?family=Montserrat:300,300i,500,500i);
-//$nomdelafont: 'nom de la font', sans-serif;
-// -------- local font : advent pro
-//@include font('nom de la font', 'chemin de la font', 'weight', 'style');
-// $nomdelafont : 'nom de la font', sans-serif;
+// -------- google font : roboto
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,700i');
+$roboto: 'Roboto', sans-serif;
+
+// -------- local font : Hurme
+@include font('Hurme', '../fonts/HurmeGeometricSans3-Regular', 400, normal);
+@include font('Hurme', '../fonts/HurmeGeometricSans3-Semibold', 600, normal);
+@include font('Hurme', '../fonts/HurmeGeometricSans3-light', 300, normal);
+$hurme : 'Hurme', sans-serif;
+
 // -------- font-weight
 $hairline-weight: 100;
 $thin-weight: 200;
@@ -56,8 +66,8 @@ $italic: italic;
 
 // -------- font-size
 $fz-small: 1.2;
-$fz-regular: 1.6;
-$fz-large: 2.4;
-$fz-x-large: 3.2;
-$fz-xx-large: 4.8;
-$fz-xxx-large: 6.4;
+$fz-regular: 1.5;
+$fz-large: 1.7;
+$fz-x-large: 2.3;
+$fz-xx-large: 2.5;
+$fz-xxx-large: 3.5;
